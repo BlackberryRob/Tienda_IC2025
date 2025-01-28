@@ -8,21 +8,82 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Tienda en Línea</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css"/> <!-- comment: Digitar la ubicacion del css -->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/> <!-- comment: Arrastrar el css -->
     </head>
     <body>
-        <div>
-            <h1 style="text-align: center">Home</h1>
-            <p style="text-align: center">Bienvenidos a la página de la Tienda en línea</p>   
-        </div>
-        <div>
-            <p style="text-align: left"> Lorem ipsum dolor sit amet consectetur adipiscing elit at, nisl suscipit sociosqu tellus luctus felis orci. Curabitur molestie felis senectus iaculis ornare scelerisque ridiculus suscipit elementum, sollicitudin neque justo dignissim fermentum ligula dapibus vitae arcu viverra, in platea laoreet et parturient tincidunt commodo dictum. Augue varius mattis primis iaculis hac pulvinar magnis pretium tellus lacus, viverra nullam justo nisl phasellus donec facilisis lectus convallis, cursus aliquam sodales enim imperdiet praesent congue class pharetra. </p>
-            <p style="text-align: right"> Est eleifend consequat natoque curabitur conubia risus molestie, iaculis urna tincidunt arcu dis sagittis sodales, id nullam cursus at aliquet tellus. Magnis nec mauris pellentesque metus class erat dictum netus, eleifend aenean odio at nostra non risus orci, congue quisque scelerisque venenatis sapien enim praesent. Ad class malesuada netus litora torquent integer, ridiculus mi pellentesque scelerisque curae viverra, lectus cubilia euismod aliquet velit. Class interdum magna venenatis in cras montes pretium est bibendum facilisi, suscipit mattis hendrerit ut netus sociis maecenas proin vivamus etiam, enim cum tellus iaculis viverra dis semper scelerisque integer. </p>
-            <p style="text-align: center"> Pretium mattis in ac est himenaeos blandit at vel ligula mollis, lacinia volutpat eros taciti pellentesque gravida dictum libero erat laoreet, diam inceptos aliquet purus vulputate hac condimentum curae facilisi. Ultricies blandit magnis justo litora luctus eros, non eu quisque natoque tempus elementum facilisi, phasellus faucibus libero imperdiet aliquet. Sagittis sem vitae ultrices ante penatibus elementum netus nibh nulla, eleifend ac posuere integer potenti a inceptos litora vehicula pulvinar, scelerisque fringilla suspendisse pellentesque viverra torquent duis bibendum. Convallis scelerisque aliquam accumsan hendrerit ante sollicitudin arcu, non viverra nisl nec luctus aliquet blandit imperdiet, magna diam magnis hac mattis vehicula. Ultrices dictum non blandit vulputate diam mus proin massa, primis placerat nunc vivamus ullamcorper sapien eleifend, inceptos montes dictumst curabitur scelerisque parturient rhoncus. </p>
-        </div>
-        
-        <br>
-        <br>
-        
-        <p> Última línea</p>
-    </body>
+        <header>
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">TechShop</a>
+                <ul>
+                    <li class="nav-menu-link"><a class="nav-menu-link nav-link" href="ejemplo9.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-link"><a class="nav-menu-link nav-link" href="ejemplo2.html">&RightTriangleBar;</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <h1 style="text-align:center; background-color:black; color:white"/>Home</h1>
+            <h2>El producto mas vendido</h2>
+            <p>Segun los datos del mes pasado el producto x203 fue el que registró más ventas</p>
+        </aside>
+        <section>
+            <h2>Nuestros productos</h2>
+            <article>
+                <hr/><!-- espacio -->
+                <h2>X2126</h2>
+                <figure>
+                    <img src="https://www.cqnetcr.com/112244-thickbox_default/servidor-dell-emc-poweredge-t40-xeon-e-2224g-8gb.jpg"alt="" width="150"/>
+                    <figcaption>Servidor de alto perfil <a href="#">Comprar</a></figcaption>
+                </figure>
+            </article>
+            <article>
+                <hr/><!-- espacio -->
+                <h2>X2848</h2>
+                <figure>
+                    <img src="https://costarica.solutekla.com/photo/1/dell/servidores/dell_servidor_poweredge_r440/dell_servidor_poweredge_r440_0001"alt="" width="150"/>
+                    <figcaption>Servidor de medio perfil <a href="#">Comprar</a></figcaption>
+                </figure>
+            </article>
+            <article>
+                <hr/><!-- espacio -->
+                <h2>Z824</h2>
+                <figure>
+                    <img src="https://www.unimart.com/cdn/shop/files/DellServidordeTorrePowerEdgeT560_T560-FY25Q1.jpg?v=1717601582"alt="" width="150"/>
+                    <figcaption>Servidor de bajo perfil <a href="#">Comprar</a></figcaption>
+                </figure>
+            </article>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Código</td>
+                            <td>Descripcion</td>
+                            <td>Precio</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>X2126</td>
+                            <td>Servidor de alto perfil</td>
+                            <td>350.000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>X2848</td>
+                            <td>Servidor de medio perfil</td>
+                            <td>250.000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Z824</td>
+                            <td>Servidor de bajo perfil</td>
+                            <td>150.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer></footer>
 </html>
