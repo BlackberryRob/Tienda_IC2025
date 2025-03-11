@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.tienda.dao.CategoriaDao;
 
 @Service
-public class CategoriaProductoImpl implements CategoriaService {
+public class CategoriaServiceImpl implements CategoriaService {
 
     @Autowired
     private CategoriaDao categoriaDao;
