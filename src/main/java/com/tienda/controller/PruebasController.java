@@ -40,7 +40,6 @@ public class PruebasController {
         return "/pruebas/listado";
     }
 
-    
     @GetMapping("/listado2")
     public String listado2(Model model) {
         var productos = productoService.getProductos(false);
@@ -58,6 +57,17 @@ public class PruebasController {
         model.addAttribute("productos", productos);
         model.addAttribute("precioInf", precioInf);
         model.addAttribute("precioSup", precioSup);
+        return "/pruebas/listado2";
+    }
+
+    /*Practica #4 Debe agregar al proyecto tienda una versión de una consulta ampliada de su libre escogencia, 
+    puede ser de tabla producto, categoria o venta.*/
+    @PostMapping("/query4")
+    public String consultaQuery2(@RequestParam(value = "existencias") int existencias, Model model) {
+        var productos = productoService.findByExistenciasGreaterThanOrderByPrecioAsc(existencias);
+        model.addAttribute("totalProductos", productos.size());
+        model.addAttribute("productos", productos);
+        model.addAttribute("existencias", existencias);
         return "/pruebas/listado2";
     }
 

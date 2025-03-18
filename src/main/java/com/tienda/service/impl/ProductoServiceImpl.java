@@ -49,6 +49,14 @@ public class ProductoServiceImpl implements ProductoService {
         return productoDao.findByPrecioBetweenOrderByDescripcion(precioInf, precioSup);
     }
 
+    /*Practica #4 Debe agregar al proyecto tienda una versión de una consulta ampliada de su libre escogencia, 
+    puede ser de tabla producto, categoria o venta.*/
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> findByExistenciasGreaterThanOrderByPrecioAsc(int existencias) {
+        return productoDao.findByExistenciasGreaterThanOrderByPrecioAsc(existencias);
+    }
+
     //Ejemplo 2
     @Override
     @Transactional(readOnly = true)

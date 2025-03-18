@@ -20,6 +20,9 @@ public interface ProductoService {
 
     //Ejemplo 1: Lista de productos con precio entre ordendados por descripción ConsultaAmpliada
     public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
+    /*Practica #4 Debe agregar al proyecto tienda una versión de una consulta ampliada de su libre escogencia, 
+    puede ser de tabla producto, categoria o venta.*/  
+    public List<Producto> findByExistenciasGreaterThanOrderByPrecioAsc(int existencias);
 
     //Ejemplo 2: Lista de productos utilizando consultas con JPQL    
     public List<Producto> metodoJPQL(double precioInf, double precioSup);
